@@ -13,8 +13,11 @@ Installation
 Examples
 --------
 all:
-    $ make clean
-    $ make all 
+    
+    $ make all
+    $ make
+    $ ./stereobm_core_tb
+    $ ./stereobm_prefilter_tb
 
 Core test:
 
