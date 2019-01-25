@@ -7,18 +7,21 @@ process their surroundings.
 
 Installation
 ------------
-
+    $ sudo apt install libnetpbm10-dev 
     $ git clone git://github.com/kylc/fpga_stereo_vision
 
 Examples
 --------
+all:
+    $ make clean
+    $ make all 
 
 Core test:
 
-    $ make compile_stereobm_core_tb
+    $ make stereobm_core_tb
     $ ./stereobm_core_tb
 
 Prefilter test:
 
-    $ make compile_stereobm_prefilter_tb
+    $ make stereobm_prefilter_tb
     $ ./stereobm_prefilter_tb
