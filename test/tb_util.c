@@ -1,5 +1,4 @@
 #include <pam.h>
-
 #include "stereobm_image.h"
 
 struct rgb_image_t load_rgb_ppm(char *file_name);

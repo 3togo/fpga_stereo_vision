@@ -40,6 +40,9 @@ void stereobm_sobel(struct g_image_t *image, struct g_image_t *output) {
 	// We will create a 3x3 window centered at P = (x, y) and shift down
 	// each iteration.
 	uint8_t buf[2][3];
+	for(uint8_t i=0; i<2; i++)
+		for(uint8_t j=0; j<3; j++)
+			buf[i][j]=0;
 #pragma HLS ARRAY_PARTITION variable=buf complete dim=0
 
 	for(uint16_t x = 1; x < IMG_WIDTH - 1; x++) {
