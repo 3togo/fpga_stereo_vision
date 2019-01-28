@@ -8,7 +8,7 @@ process their surroundings.
 Installation
 ------------
     $ sudo apt install libnetpbm10-dev 
-    $ git clone git://github.com/3togo/fpga_stereo_vision
+    $ git clone https://github.com/3togo/fpga_stereo_vision.git
 
 Examples
 --------
